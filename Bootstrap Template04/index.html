@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tailor Website</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background-image: url('./Images/Background/hero.png'); 
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+    }
+    .hero-overlay {
+      background-color: rgba(40, 27, 27, 0.6); 
+      padding: 60px 30px;
+    }
+    .btn-custom {
+      background-color: #c49a7e;
+      color: white;
+      border: none;
+    }
+    .btn-custom:hover {
+      background-color: #b78c6e;
+    }
+    .logo {
+      font-weight: bold;
+      color: #c49a7e;
+    }
+
+
+
+    .step-number {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #c49a7e;
+  border-radius: 50%;
+  color: #c49a7e;
+  font-weight: 600;
+}
+
+.about-section {
+  position: relative;
+}
+
+.img-overlap {
+  width: 250px;
+  top: 50%;
+  transform: translate(50%, -50%);
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border: 5px solid white;
+  z-index: 2;
+}
+
+.btn-custom {
+  background-color: #c49a7e;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-custom:hover {
+  background-color: #b78c6e;
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+  <div class="container">
+    <a class="navbar-brand logo" href="#">Tailor.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <a href="#" class="btn btn-custom px-4">VISIT US</a>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+  
+      <div class="col-md-6">
+        <div class="hero-overlay">
+          <p class="mb-2">BEST TAILOR SERVICE IN YOUR CITY</p>
+          <h1 class="display-5 fw-bold">We make cloths<br>that suit you</h1>
+          <p class="mt-3">TLorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+          <a href="#" class="btn btn-custom mt-4">OUR SERVICES</a>
+        </div>
+      </div>
+     
+      <div class="col-md-6 text-center">
+        <img src="./Images/Background/h1_hero1.png" alt="Tailor Image" class="img-fluid"> <!-- Replace with your actual image -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center">
+    
+      <div class="col-md-4 mb-4">
+        <img src="./Images/Illustrations/offers1.png" alt="Tailor Sewing" class="img-fluid mb-3">
+        <div class="d-flex align-items-start justify-content-center">
+          <span class="step-number me-2">1</span>
+          <div class="text-start">
+            <h5 class="fw-bold" style="color: #c49a7e;">Tailor Sweing</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <img src="./Images/Illustrations/offers2.png" alt="Measurement" class="img-fluid mb-3">
+        <div class="d-flex align-items-start justify-content-center">
+          <span class="step-number me-2">2</span>
+          <div class="text-start">
+            <h5 class="fw-bold text-dark">Mesurement</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4 mb-4">
+        <img src="./Images/Illustrations/offers3.png" alt="Ready-made" class="img-fluid mb-3">
+        <div class="d-flex align-items-start justify-content-center">
+          <span class="step-number me-2">3</span>
+          <div class="text-start">
+            <h5 class="fw-bold text-dark">Ready-made</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="about-section py-5">
+    <div class="col-lg-6 d-flex align-items-center w-100" style="background-color: #fdece4;"></div>
+  <div class="container-fluid">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 p-0">
+        <img src="./Images/Illustrations/visit_bg.png" alt="Tailor Suit" class="img-fluid w-100">
+      </div>
+
+      
+      <div class="col-lg-6 d-flex align-items-center" style="background-color: #fdece4;">
+        <div class="p-5">
+          <h2 class="fw-bold">About our<br>tailor house</h2>
+          <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+          <a href="#" class="btn btn-custom mt-3">MORE ABOUT US</a>
+        
+    </div>
+  </div>
+</section>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Why Use Our Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<section class="py-5 text-center">
+  <div class="container">
+   
+    <h2 class="fw-bold mb-3">Why use our service?</h2>
+    <p class="mb-5 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Suspendisse varius enim in eros.</p>
+
+ 
+    <div class="row justify-content-center">
+      
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="mb-3">
+          <i class="bi bi-scissors" style="font-size: 2.5rem; color: #c49a7e;"></i>
+        </div>
+        <h5 class="fw-bold">Tailor Sweing</h5>
+        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+      
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="mb-3">
+          <i class="bi bi-record-btn" style="font-size: 2.5rem; color: #c49a7e;"></i>
+        </div>
+        <h5 class="fw-bold">Tailor Sweing</h5>
+        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+      
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="mb-3">
+          <i class="bi bi-cpu" style="font-size: 2.5rem; color: #c49a7e;"></i>
+        </div>
+        <h5 class="fw-bold">Tailor Sweing</h5>
+        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+      
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="mb-3">
+          <i class="bi bi-scissors" style="font-size: 2.5rem; color: #c49a7e;"></i>
+        </div>
+        <h5 class="fw-bold">Tailor Sweing</h5>
+        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container-fluid px-0">
+    <div class="ratio ratio-16x9">
+      <iframe src="./Images/Background/video-bg.png" 
+              title="YouTube video" 
+              allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-10 position-relative mb-5" data-aos="fade-up">
+
+     
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+           
+            <div class="carousel-item active">
+              <div class="mb-4">
+                <img src="./Images/Illustrations/quotes-sign.png" alt="Quote" class="img-fluid" style="width: 60px;">
+              </div>
+              <p class="fs-5 text-black">
+                Brook presents your services with flexible, convenient and compose layouts.
+                You can select your favorite layouts & elements for circular tests with unlimited
+                customization possibilities. Pixel-perfect replication of the designer’s
+                intended concepts.
+              </p>
+              <div class="d-flex align-items-center justify-content-center mt-4">
+                <img src="./Images/Illustrations/testimonial.png" alt="Robart Brown"
+                  class="rounded-circle border border-2 border-danger me-3"
+                  style="width: 60px; height: 60px; object-fit: cover;">
+                <div class="text-start">
+                  <h6 class="mb-0 fw-semibold">Robart Brown</h6>
+                  <small class="text-muted">Creative Designer at Colorlib</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="mb-4">
+                <img src="./Images/Illustrations/quotes-sign.png" alt="Quote" class="img-fluid" style="width: 60px;">
+              </div>
+              <p class="fs-5 text-black">
+                This layout is beautifully designed and highly customizable. You can
+                achieve a professional and responsive look with ease.
+              </p>
+              <div class="d-flex align-items-center justify-content-center mt-4">
+                <img src="./Images/Illustrations/testimonial.png" alt="Jane Doe"
+                  class="rounded-circle border border-2 border-danger me-3"
+                  style="width: 60px; height: 60px; object-fit: cover;">
+                <div class="text-start">
+                  <h6 class="mb-0 fw-semibold">Jane Doe</h6>
+                  <small class="text-muted">UI/UX Expert at Envato</small>
+                </div>
+              </div>
+            </div>
+
+        
+
+          </div>
+
+    
+          <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+            <button class="btn btn-outline-danger" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="btn btn-outline-danger" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+ 
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        
+   
+      <section class="py-5 bg-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Follow us on Instagram</h2>
+    <p class="text-muted mb-5">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+      Suspendisse varius enim in eros.
+    </p>
+    
+    <div class="row justify-content-center g-4">
+      <div class="col-md-5">
+        <img src="./Images/Illustrations/instra1.png" alt="Instagram 1" class="img-fluid w-100">
+      </div>
+      <div class="col-md-5">
+        <img src="./Images/Illustrations/instra2.png" alt="Instagram 2" class="img-fluid w-100">
+      </div>
+    </div>
+  </div>
+</section>
+
+   <section class="py-5 bg-dark text-white">
+  <div class="container-fluid px-0">
+    <div class="row g-0">
+      
+ 
+      <div class="col-md-6">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.813614187078!2d-74.00601508459316!3d40.71277577933148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQyJzQ2LjAiTiA3NMKwMDAnMjIuMCJX!5e0!3m2!1sen!2sin!4v1617753468787!5m2!1sen!2sin" 
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
+   
+      <div class="col-md-6 bg-dark text-white d-flex flex-column justify-content-center px-5">
+        <h3 class="fw-bold text-warning mb-3">Tailor.</h3>
+        <p class="mb-4">Lorem ipsum dolor sit amet,<br> consectetur adipiscing.</p>
+        
+        <h5 class="text-warning mb-1">(80) 783 367-3904</h5>
+        <p class="text-white-50 mb-4">(80) 783 367-3904</p>
+
+        <h6 class="fw-bold text-warning mb-3">Our solutions</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">About</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">Services</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
